@@ -1,0 +1,101 @@
+
+header {
+  
+    margin-top: 5px;
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #23324f;
+    color: #FC454c;
+    
+}
+
+h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+nav {
+    
+    margin-top: 5px;
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    
+}
+
+li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#background {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    margin: 0 0 0 0;
+    background-image: url("../images/img1564.3.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+#me {
+    
+    height: 450px;
+    width : 300px;
+    background-color:#fff;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px 15px 90px 15px; 
+    transform: rotate(-8deg);
+    margin-right: 600px;
+   
+}
+
+main {
+    height: 800px;
+    background-color:#162033 ;
+    background-size: cover;
+}
+  
+/* Cards are split into two columns at 992px or smaller */
+@media screen and (max-width: 992px) {
+    nav {
+        float: right;
+    
+    }
+    /* Change the header color */
+    header {
+      background:  #562E52;
+    }
+    #me {
+        margin-right: 400px;
+    }
+  }
+  
+  /* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    header, nav {
+     display: flex;   
+     flex-direction: column;
+    }
+    /* Change the header color */
+    header {
+      background: #4e7296;
+    }
+    #me {
+        justify-content: center;
+        margin-right: 0px;
+    }
+  }
+  
+
