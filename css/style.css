@@ -2,11 +2,10 @@
 header {
   
     margin-top: 5px;
-    padding: 15px;
+    padding: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #23324f;
-    color: #f5272e;
-    
+    color: #f5272e;  
 }
 
 h1 {
@@ -16,66 +15,77 @@ h1 {
 }
 
 nav {
-    
     margin-top: 5px;
     padding-top: 15px;
-    margin-right: 20px;
+    margin-right: 15px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
 }
+
 
 li {
     display: inline-block;
-    margin-left: 20px;
-    
+    margin-left: 20px;  
 }
 
 a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 25px;
-    
+    font-size: 25px;   
 }
-
+/* The user's cursor is positioned over the element */
+a:hover {
+    background-color: #f5272e;  
+  }
+  /* The user is actively pressing down on the element */
+a:active {
+    font-size: 180%;
+    box-shadow: 0 0 10px #000 inset;
+  }
+  
 #background {
     display: flex;
+    justify-content: space-evenly;
     height: 500px;
     width: 100%;
     margin: 0 0 0 0;
     background-image: url("../images/img1564.3.jpg");
     background-size: cover;
     background-position: center;
-    justify-content:center;
-    align-items: center;
-    
+    align-items: center;    
 }
 
-#me {
-    
-    height: 450px;
+#me { 
+
     width : 300px;
     background-color:#fff;
     border: 2px solid black;
     border-radius: 5px;
     padding: 15px 15px 90px 15px; 
     transform: rotate(-8deg);
-    margin-right: 600px;
-   
+}
+
+#greeting {
+    text-align: center;
+    color:#23324f;
+    font-size: 40px;    
+    padding-bottom: 80px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 main {
-    
     border: 10px solid #fff;
     background-color:#162033 ;
     background-size: cover;
 }
+
 h2 {
     display: flex;
     justify-content: center;
     color:#f5272e;
     font-size: 40px;
-    padding: 20px;
+    padding: 20px;  
+    padding-bottom: 30px;
 }    
 
 #about-me {
@@ -91,50 +101,71 @@ h2 {
     border-bottom: 5px solid #fff;   
 }
 
-#images {
+#images{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    height: 600px; 
-    margin:30px;
+    height: 600px;    
+    position:relative;
+} 
 
-  
-}
-
-#rail {
+#rail{
     height: 600px;
     width: 300px;
-    
 }
 
+#rail-link {
+    height: 600px;
+    width: 300px;  
+}
 
-#boats, #dock, #bog, #campfire, #plant {
-    
+#boats, #dock, #bog, #campfire, #plant, .link {
     height: 300px;
     width: 300px;  
 }
 
+#rail-link, .link{
+    position: relative;
+    display: inline-block
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50%;
+    width: 100%;
+    height: 2em;
+    color: #f5272e;
+    background-color: rgb(22 32 51 / 75%);
+    text-align:center;
+}​
+span :hover {     
+   box-shadow: 0 0 10px #ccc;
+   font-size: 180%;
+   
+  }
   
 /* Cards are split into two columns at 992px or smaller */
 @media screen and (max-width: 992px) {
     nav {
         float: right;
-    
     }
-    /* Change the header color */
+    header, nav {
+        display: flex;   
+        flex-direction: column;
+        text-align: center;
+       }
+/* Change the header color */
     header {
       background:  #562E52;
-    }
-    #me {
-        margin-right: 400px;
     }
     #images{
         height: 900px;
     }
-  }
   
-  /* Cards are stacked on top of each other at 768px or smaller */
+/* Cards are stacked on top of each other at 768px or smaller */
   @media screen and (max-width: 768px) {
     h1 {
     text-align: center;    
@@ -144,21 +175,15 @@ h2 {
      flex-direction: column;
      text-align: center;
     }
-    /* Change the header color */
+ /* Change the header color */
     header {
       background: #5381af;
     }
     #me {
-        justify-content: center;
-        margin-right: 0px;
+        align-items: center;
+        
     }
     #images {
         height: 1800px;
-        align-items: center;
-       
-        
-        
+        align-items: center; 
     }
-  }
-  
-
