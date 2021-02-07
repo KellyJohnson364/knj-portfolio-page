@@ -1,6 +1,6 @@
+/* Header*/
 
 header {
-  
     margin-top: 5px;
     padding: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -21,28 +21,36 @@ nav {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
 }
-
-
+span :hover {     
+    box-shadow: 0 0 10px #ccc;
+    font-size: 180%;
+}
+   
 li {
     display: inline-block;
     margin-left: 20px;  
-}
+}   
+
+/* Removes link default settings*/
 
 a {
     color: #ffffff;
     text-decoration: none;
     font-size: 25px;   
 }
-/* The user's cursor is positioned over the element */
+
+/* Cursor behavior for links */
+
 a:hover {
     background-color: #f5272e;  
   }
-  /* The user is actively pressing down on the element */
 a:active {
     font-size: 180%;
     box-shadow: 0 0 10px #000 inset;
-  }
-  
+}
+
+/* background image and positioning*/  
+
 #background {
     display: flex;
     justify-content: space-evenly;
@@ -55,8 +63,9 @@ a:active {
     align-items: center;    
 }
 
-#me { 
+/* My photo */
 
+#me { 
     width : 300px;
     background-color:#fff;
     border: 2px solid black;
@@ -65,19 +74,25 @@ a:active {
     transform: rotate(-8deg);
 }
 
+/* Greetig */
+
 #greeting {
     text-align: center;
-    color:#23324f;
+    color:#162033;
     font-size: 40px;    
     padding-bottom: 80px; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* Main background and border */
 
 main {
     border: 10px solid #fff;
     background-color:#162033 ;
     background-size: cover;
 }
+
+/* Section headers */
 
 h2 {
     display: flex;
@@ -88,18 +103,24 @@ h2 {
     padding-bottom: 30px;
 }    
 
+/* About ME*/
+
 #about-me {
-    line-height: 1.25;
+    line-height: 1.5;
     color:#ffffff;
     font-size: 24px;
     padding: 30px;
     border-bottom: 5px solid #fff;
 }
 
+/*Projects*/
+
 #projects {
     padding: 30px;
     border-bottom: 5px solid #fff;   
 }
+
+/* Images to make up for lack of actual content*/
 
 #images{
     display:flex;
@@ -109,26 +130,24 @@ h2 {
     height: 600px;    
     position:relative;
 } 
-
 #rail{
     height: 600px;
     width: 300px;
 }
-
 #rail-link {
     height: 600px;
     width: 300px;  
 }
-
 #boats, #dock, #bog, #campfire, #plant, .link {
     height: 300px;
     width: 300px;  
 }
-
 #rail-link, .link{
     position: relative;
     display: inline-block
 }
+
+/* Labels for project links*/
 
 span {
     position: absolute;
@@ -136,18 +155,40 @@ span {
     left: 50%;
     margin-left: -50%;
     width: 100%;
-    height: 2em;
+    height: 3em;
     color: #f5272e;
     background-color: rgb(22 32 51 / 75%);
     text-align:center;
-}​
-span :hover {     
-   box-shadow: 0 0 10px #ccc;
-   font-size: 180%;
-   
-  }
-  
-/* Cards are split into two columns at 992px or smaller */
+}
+
+/* Background image of linked site*/
+
+#horiseon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50%;
+    width: 100%;
+    height: 3em;
+    color: #f5272e;
+    background-color: rgb(22 32 51 / 75%);
+    text-align:center;
+    background-image: url(../images/screenshot-2.png) ;
+}
+
+/* Contact Info */
+
+#contacts {
+    line-height: 1.5;
+    color:#ffffff;
+    font-size: 24px;
+    padding: 30px;
+    border-bottom: 5px solid #fff;
+    text-align: center;
+}   
+
+/* Changes for screensize 992px or smaller */
+
 @media screen and (max-width: 992px) {
     nav {
         float: right;
@@ -157,7 +198,9 @@ span :hover {
         flex-direction: column;
         text-align: center;
        }
+
 /* Change the header color */
+
     header {
       background:  #562E52;
     }
@@ -165,7 +208,8 @@ span :hover {
         height: 900px;
     }
   
-/* Cards are stacked on top of each other at 768px or smaller */
+/* Changes for screen size 768px or smaller */
+
   @media screen and (max-width: 768px) {
     h1 {
     text-align: center;    
@@ -175,7 +219,9 @@ span :hover {
      flex-direction: column;
      text-align: center;
     }
+
  /* Change the header color */
+ 
     header {
       background: #5381af;
     }
