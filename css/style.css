@@ -72,8 +72,29 @@ a:active {
     border-radius: 5px;
     padding: 15px 15px 90px 15px; 
     transform: rotate(-8deg);
-}
+    
+ 
+  }
 
+  
+  .three {
+    transform: rotateZ(-25deg);
+    animation: three 10s infinite;
+    animation-direction: alternate;
+    background-color: #439772;
+  }
+  
+
+  @keyframes three {
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(-25deg);
+    }
+  }
+  
+  
 /* Greetig */
 
 #greeting {
@@ -100,7 +121,7 @@ h2 {
     color:#f5272e;
     font-size: 40px;
     padding: 20px;  
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }    
 
 /* About ME*/
@@ -116,64 +137,46 @@ h2 {
 /*Projects*/
 
 #projects {
-    padding: 30px;
-    border-bottom: 5px solid #fff;   
+  
+    border-bottom: 5px solid #fff;  
+   
+    
 }
 
-/* Images to make up for lack of actual content*/
 
-#images{
+#container {
+    height: 605px; 
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
     align-content: center;
-    height: 600px;    
-    position:relative;
 } 
-#rail{
+
+
+#brew, #dropper {
     height: 600px;
     width: 300px;
 }
-#rail-link {
-    height: 600px;
-    width: 300px;  
-}
-#boats, #dock, #bog, #campfire, #plant, .link {
+
+#weather, #password, #quiz, #planner, #cheater, .dropdown {
     height: 300px;
     width: 300px;  
-}
-#rail-link, .link{
-    position: relative;
-    display: inline-block
+    border: 2px solid black;
 }
 
-/* Labels for project links*/
-
-span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -50%;
-    width: 100%;
-    height: 3em;
-    color: #f5272e;
-    background-color: rgb(22 32 51 / 75%);
-    text-align:center;
-}
 
 /* Background image of linked site*/
 
-#horiseon {
+.dropdown-content {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     margin-left: -50%;
     width: 100%;
     height: 3em;
-    color: #f5272e;
     background-color: rgb(22 32 51 / 75%);
     text-align:center;
-    background-image: url(../images/screenshot-2.png) ;
+   
 }
 
 /* Contact Info */
@@ -185,7 +188,40 @@ span {
     padding: 30px;
     border-bottom: 5px solid #fff;
     text-align: center;
-}   
+}  
+
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    background-color: #f1f1f1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
 
 /* Changes for screensize 992px or smaller */
 
@@ -204,8 +240,13 @@ span {
     header {
       background:  #562E52;
     }
-    #images{
-        height: 900px;
+    #container{
+        height: 1205px;
+        padding: 0px auto;
+        align-items: center;
+    }
+    #projects{
+        padding: 30px auto;
     }
   
 /* Changes for screen size 768px or smaller */
@@ -229,7 +270,15 @@ span {
         align-items: center;
         
     }
-    #images {
-        height: 1800px;
-        align-items: center; 
+    #container {
+        display:flex;
+        flex-direction: column;
+        height:2105px;
+        flex-wrap: nowrap;
+        justify-content: center; 
+      
+       
     }
+  
+    #projects{
+        padding: 30px auto;
