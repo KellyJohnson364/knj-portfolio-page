@@ -164,7 +164,7 @@ h2 {
 #weather, #password, #quiz, #planner, #cheater, .dropdown {
     height: 300px;
     width: 300px;  
-    border: 2px solid black;
+    border: 2px solid #162033;
    
 }
 
@@ -185,7 +185,7 @@ h2 {
    
 }
 .select {
-    border: 3px solid #23324f;
+    border: 3px solid #162033;
     
 }
 
@@ -219,7 +219,7 @@ h2 {
   
   /* Links inside the dropdown */
   .select {
-    color: #23324f;
+    color: #162033;
     background-color: #f1f1f1;
    
     text-decoration: none;
@@ -227,7 +227,7 @@ h2 {
   }
   .projectTitle {
     padding: 10px;
-    background-color: #23324f;
+    background-color: #162033;
     color: #fff;   
 }
 
@@ -260,7 +260,7 @@ h2 {
       background:  #562E52;
     }
     #container{
-        height: 1205px;
+        height: 905px;
         padding: 0px auto;
         align-items: center;
     }
