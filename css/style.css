@@ -268,9 +268,9 @@ h2 {
         padding: 30px auto;
     }
   
-/* Changes for screen size 768px or smaller */
+/* Changes for screen size 600px or smaller */
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 600px) {
     h1 {
     text-align: center;    
     }  
