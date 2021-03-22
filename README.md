@@ -5,3 +5,5 @@ This is the portfolio page for my projects current and future.  This site has be
 ![Screenshot 1 of site](./images/screenshot_5.png)
 ![Screenshot 2 of site](./images/screenshot_4.png)
 ![Screenshot 3 of site](./images/screenshot_3.png)
+Email: KJ3641402@gmail.com
+Linkedin: [linkedin.com/in/KellyJohnson364](https://www.linkedin.com/in/kelly-johnson-473227202)
