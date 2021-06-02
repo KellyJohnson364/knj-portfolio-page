@@ -49,7 +49,7 @@ a:hover {
   }
 a:active {
     font-size: 180%;
-    box-shadow: 0 0 10px #000 inset;
+    box-shadow: 0 0 10px #f5272e inset;
 }
 
 /* background image and positioning*/  
@@ -75,11 +75,8 @@ a:active {
     border-radius: 5px;
     padding: 15px 15px 90px 15px; 
     transform: rotate(-8deg);
-    
- 
   }
 
-  
   .three {
     transform: rotateZ(-25deg);
     animation: three 10s infinite;
@@ -147,7 +144,7 @@ h2 {
 
 
 #container {
-    height: 605px; 
+    height: 650px; 
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;  
@@ -155,13 +152,13 @@ h2 {
 } 
 
 
-#brew, #dropper {
+#loo, #project1, #project2, #dine {
     height: 600px;
     width: 300px;
   
 }
 
-#weather, #password, #quiz, #planner, #cheater, .dropdown {
+#weath, #word, #java, #wrk, .dropdown {
     height: 300px;
     width: 300px;  
     border: 2px solid #162033;
@@ -173,9 +170,9 @@ h2 {
 
 .dropdown-content {
     font-size: 25px;    
-    color: #f5272e;
+    color: rgb(126, 163, 145);
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     margin-left: -50%;
     width: 100%;
@@ -185,7 +182,7 @@ h2 {
    
 }
 .select {
-    border: 3px solid #162033;
+    border: 3px solid rgb(126, 163, 145);
     
 }
 
@@ -228,15 +225,25 @@ h2 {
   .projectTitle {
     padding: 10px;
     background-color: #162033;
-    color: #fff;   
+    color: rgb(126, 163, 145);   
 }
-
+  button {
+    min-width: 300px;
+  }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-      background-color: #ddd;
+  .dropdown-content button:hover {
+    color: #fff;
+
       transform:scale(1.1);
     }
+
+    .dropdown-content button:active {
+      color: #fff;
+        background-color: #ddd;
+        transform:scale(1.1);
+      }
+    
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
@@ -260,13 +267,14 @@ h2 {
       background:  #562E52;
     }
     #container{
-        height: 905px;
+        height: 1400px;
         padding: 0px auto;
         align-items: center;
     }
     #projects{
         padding: 30px auto;
     }
+  }
   
 /* Changes for screen size 600px or smaller */
 
@@ -292,12 +300,96 @@ h2 {
     #container {
         display:flex;
         flex-direction: column;
-        height:2105px;
+        height:2600px;
         flex-wrap: nowrap;
         justify-content: center; 
-      
-       
+         
     }
   
     #projects{
         padding: 30px auto;
+    }  
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
