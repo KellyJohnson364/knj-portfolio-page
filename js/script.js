@@ -1,14 +1,14 @@
 
 let id
 let destination
-
+// when projecttitle is clicked on
 function projectHandler(event)  {
   event.preventDefault();
   console.log(this)
   if (event.target.hasAttribute("id")) {
     id = event.target.getAttribute("id");
   }  
-
+//modal to choose between repository and deployed site
 Swal.fire({
   toast: true,
   title: 'Would you like to visit the Deployed Site or the Repository?',
@@ -27,6 +27,7 @@ Swal.fire({
     destination = `${id}Repo`
   
   }
+  //destinations for each choice
  ( ( {
     brewDeploy: () => {  window.location.href = "https://kellyjohnson364.github.io/brews-and-loos/" },
 
@@ -44,9 +45,9 @@ Swal.fire({
 
     passwordRepo: () => { window.location.href ="https://github.com/KellyJohnson364/password-generator"},
 
-    quizDeploy: () => { window.location.href ="https://kellyjohnson364.github.io/javascript-quiz/"},
+    techDeploy: () => { window.location.href ="https://vast-forest-19866.herokuapp.com/"},
 
-    quizRepo: () => { window.location.href ="https://github.com/KellyJohnson364/javascript-quiz"},
+    techRepo: () => { window.location.href ="https://github.com/KellyJohnson364/tech_blog"},
 
     planDeploy: () => { window.location.href ="https://kellyjohnson364.github.io/work-day-planner/"},
 
