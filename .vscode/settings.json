@@ -1,0 +1,132 @@
+{
+	"editor.detectIndentation": false,
+	"editor.tabSize": 2,
+	"editor.formatOnSave": true,
+	"editor.formatOnSaveMode": "file",
+	"editor.formatOnPaste": true,
+	"editor.insertSpaces": false,
+	"editor.formatOnType": true,
+	"editor.hover.delay": 200,
+	"editor.linkedEditing": true,
+	"editor.semanticHighlighting.enabled": "configuredByTheme",
+	"editor.showDeprecated": true,
+	"editor.suggest.showClasses": true,
+	"editor.suggest.showColors": true,
+	"editor.suggest.showConstants": true,
+	"editor.suggest.showConstructors": true,
+	"editor.suggest.showCustomcolors": true,
+	"editor.suggest.showEnumMembers": true,
+	"editor.suggest.showEnums": true,
+	"editor.suggest.showFields": true,
+	"editor.suggest.showFiles": true,
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": false,
+		"strings": false
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"editor.renderLineHighlight": "all",
+	"editor.suggest.preview": true,
+	"editor.tabCompletion": "on",
+	"editor.guides.indentation": true,
+	"editor.guides.highlightActiveIndentation": true,
+	"editor.autoClosingBrackets": "always",
+	"editor.autoSurround": "languageDefined",
+	"editor.comments.insertSpace": true,
+	"extensions.ignoreRecommendations": false,
+	"files.eol": "\n",
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"cSpell.words": [
+		"Gaugeless",
+		"headlessui",
+		"heroicons",
+		"kyros",
+		"noindex",
+		"relativerounded",
+		"semibold",
+		"sendgrid",
+		"Strapi",
+		"supabase",
+		"tailwindcss",
+		"testid",
+		"tsyringe",
+		"upsert"
+	],
+	"javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+	"javascript.format.semicolons": "remove",
+	"javascript.preferences.importModuleSpecifier": "non-relative",
+	"javascript.preferences.quoteStyle": "single",
+	"javascript.preferences.importModuleSpecifierEnding": "index",
+	"javascript.suggest.completeFunctionCalls": true,
+	"javascript.suggest.classMemberSnippets.enabled": true,
+	"javascript.preferences.jsxAttributeCompletionStyle": "auto",
+	"typescript.format.semicolons": "remove",
+	"typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+	"typescript.preferences.quoteStyle": "single",
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"typescript.preferences.importModuleSpecifierEnding": "index",
+	"typescript.suggest.completeFunctionCalls": true,
+	"typescript.suggest.classMemberSnippets.enabled": true,
+	"typescript.preferences.jsxAttributeCompletionStyle": "auto",
+	"[json]": {
+		"editor.quickSuggestions": {
+			"strings": true
+		},
+		"editor.suggest.insertMode": "replace"
+	},
+	"[markdown]": {
+		"editor.wordWrap": "on",
+		"editor.quickSuggestions": {
+			"comments": "off",
+			"strings": "off",
+			"other": "off"
+		}
+	},
+	"git.enableCommitSigning": true,
+	"git.promptToSaveFilesBeforeCommit": "always",
+	"git.promptToSaveFilesBeforeStash": "always",
+	"git.pruneOnFetch": true,
+	"npm.packageManager": "yarn",
+	"todohighlight.isEnable": true,
+	"todohighlight.isCaseSensitive": true,
+	"todohighlight.keywords": [
+		{
+			"text": "NOTE:",
+			"color": "black",
+			"backgroundColor": "#ffbd2a"
+		},
+		{
+			"text": "TODO:",
+			"color": "#eee",
+			"backgroundColor": "red"
+		},
+		{
+			"text": "FIXME:",
+			"color": "#eee",
+			"backgroundColor": "red"
+		}
+	],
+	"todohighlight.include": [
+		"**/*.js",
+		"**/*.jsx",
+		"**/*.ts",
+		"**/*.tsx",
+		"**/*.html",
+		"**/*.css",
+		"**/*.scss"
+	],
+	"todohighlight.exclude": [
+		"**/node_modules/**",
+		"**/.vscode/**",
+		"**/.github/**"
+	],
+	"workbench.colorCustomizations": {
+		"activityBar.background": "#023430",
+		"titleBar.activeBackground": "#034943",
+		"titleBar.activeForeground": "#E9FEFC"
+	},
+	"aa": "bb"
+}

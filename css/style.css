@@ -1,395 +1,344 @@
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
+
 /* Header*/
 
 header {
-    margin-top: 5px;
-    padding: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #23324f;
-    color: #f5272e;  
+	margin-top: 5px;
+	padding: 30px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background-color: #6c6e72;
+	color: #f5272e;
 }
 
 h1 {
-    display: inline-block;
-    font-size: 48px;
-    padding-left: 20px;
+	display: inline-block;
+	font-size: 48px;
+	padding-left: 20px;
 }
 
 nav {
-    margin-top: 5px;
-    padding-top: 15px;
-    margin-right: 15px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+	margin-top: 5px;
+	padding-top: 15px;
+	margin-right: 15px;
+	float: right;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-span :hover {     
-    box-shadow: 0 0 10px #ccc;
-    font-size: 180%;
+
+span :hover {
+	box-shadow: 0 0 10px #ccc;
+	font-size: 180%;
 }
- 
+
 li {
-    display: inline-block;
-    margin-left: 20px;  
-}   
+	display: inline-block;
+	margin-left: 20px;
+}
 
 /* Removes link default settings*/
 
 a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 25px;   
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 25px;
 }
 
 /* Cursor behavior for links */
 
 a:hover {
-    color: #f5272e;  
-  }
-a:active {
-    font-size: 180%;
-    box-shadow: 0 0 10px #f5272e inset;
+	color: #f5272e;
 }
 
-/* background image and positioning*/  
+a:active {
+	font-size: 180%;
+	box-shadow: 0 0 10px #f5272e inset;
+}
+
+/* background image and positioning*/
 
 #background {
-    display: flex;
-    justify-content: space-evenly;
-    height: 500px;
-    width: 100%;
-    margin: 0 0 0 0;
-    background-image: url("../images/img1564.3.jpg");
-    background-size: cover;
-    background-position: center;
-    align-items: center;    
+	display: flex;
+	justify-content: space-evenly;
+	height: 500px;
+	width: 100%;
+	margin: 0 0 0 0;
+	background-image: url("../images/img1564.3.jpg");
+	background-size: cover;
+	background-position: center;
+	align-items: center;
 }
 
 /* My photo */
 
-#me { 
-    width : 300px;
-    background-color:#fff;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 15px 15px 90px 15px; 
-    transform: rotate(-8deg);
-  }
+#me {
+	width: 300px;
+	background-color: #fff;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 15px 15px 90px 15px;
+	transform: rotate(-8deg);
+}
 
-  .three {
-    transform: rotateZ(-25deg);
-    animation: three 10s infinite;
-    animation-direction: alternate;
-    background-color: #439772;
-  }
-  
+.three {
+	transform: rotateZ(-25deg);
+	animation: three 10s infinite;
+	animation-direction: alternate;
+	background-color: #439772;
+}
 
-  @keyframes three {
-    0% {
-      transform: rotateZ(0);
-    }
-    100% {
-      transform: rotateZ(-25deg);
-    }
-  }
-  
-  
+
+@keyframes three {
+	0% {
+		transform: rotateZ(0);
+	}
+
+	100% {
+		transform: rotateZ(-25deg);
+	}
+}
+
+
 /* Greetig */
 
 #greeting {
-    text-align: center;
-    color:#162033;
-    font-size: 40px;    
-    padding-bottom: 80px; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+	color: #162033;
+	font-size: 40px;
+	padding-bottom: 80px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Main background and border */
 
 main {
-    border: 10px solid #fff;
-    background-color:#162033 ;
-    background-size: cover;
+	border: 10px solid #fff;
+	background-color: #6c6e72;
+	background-size: cover;
 }
 
 /* Section headers */
 
 h2 {
-    display: flex;
-    justify-content: center;
-    color:#f5272e;
-    font-size: 40px;
-    padding: 20px;  
-    padding-bottom: 50px;
-}    
+	display: flex;
+	justify-content: center;
+	color: #25201fc0;
+	font-size: 40px;
+	padding: 20px;
+	padding-bottom: 50px;
+}
 
 /* About ME*/
 
 #about-me {
-    line-height: 1.5;
-    color:#ffffff;
-    font-size: 24px;
-    padding: 30px;
-    border-bottom: 5px solid #fff;
+	display: flex;
+	flex-direction: column;
+	line-height: 1.5;
+	color: #ffffff;
+	font-size: 24px;
+	padding: 30px;
+	border-bottom: 5px solid #fff;
+	align-content: space-between;
+
+	p {
+		padding-bottom: 50px;
+	}
 }
 
 /*Projects*/
 
 #projects {
-  
-    border-bottom: 5px solid #fff;   
-    
+
+	border-bottom: 5px solid #fff;
+
 }
 
 
 #container {
-    height: 650px; 
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;  
-    align-content: center;
-} 
-
-
-#loo, #project1, #project2, #dine {
-    height: 600px;
-    width: 300px;
-  
+	height: 650px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
 }
 
-#weath, #word, #blog, #wrk, .dropdown {
-    height: 300px;
-    width: 300px;  
-    border: 2px solid #162033;
-   
+
+#loo,
+#project1,
+#project2,
+#dine {
+	height: 600px;
+	width: 300px;
+
+}
+
+#weath,
+#word,
+#blog,
+#wrk,
+.dropdown {
+	height: 300px;
+	width: 300px;
+	border: 2px solid #162033;
+
 }
 
 
 /* Background image of linked site*/
 
 .dropdown-content {
-    font-size: 25px;    
-    color: rgb(126, 163, 145);
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    margin-left: -50%;
-    width: 100%;
-    height: 2em;
-    background-color: rgb(22 32 51 / 75%);
-    text-align:center;
-   
+	font-size: 25px;
+	color: rgb(126, 163, 145);
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-left: -50%;
+	width: 100%;
+	height: 2em;
+	background-color: rgb(22 32 51 / 75%);
+	text-align: center;
+
 }
+
 .select {
-    border: 3px solid rgb(126, 163, 145);
-    
+	border: 3px solid rgb(126, 163, 145);
+
 }
 
 /* Contact Info */
 
 #contacts {
-    line-height: 1.5;
-    color:#ffffff;
-    font-size: 24px;
-    padding: 30px;
-    border-bottom: 5px solid #fff;
-    text-align: center;
-}  
-
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .select {
-    color: #162033;
-    background-color: #f1f1f1;
-   
-    text-decoration: none;
-    display: block;
-  }
-  .projectTitle {
-    padding: 10px;
-    background-color: #162033;
-    color: rgb(126, 163, 145);   
+	line-height: 1.5;
+	color: #ffffff;
+	font-size: 24px;
+	padding: 30px;
+	border-bottom: 5px solid #fff;
+	text-align: center;
 }
-  button {
-    min-width: 300px;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content button:hover {
-    color: #fff;
 
-      transform:scale(1.1);
-    }
 
-    .dropdown-content button:active {
-      color: #fff;
-        background-color: #ddd;
-        transform:scale(1.1);
-      }
-    
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.select {
+	color: #162033;
+	background-color: #f1f1f1;
+
+	text-decoration: none;
+	display: block;
+}
+
+.projectTitle {
+	padding: 10px;
+	background-color: #162033;
+	color: rgb(126, 163, 145);
+}
+
+button {
+	min-width: 300px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content button:hover {
+	color: #fff;
+
+	transform: scale(1.1);
+}
+
+.dropdown-content button:active {
+	color: #fff;
+	background-color: #ddd;
+	transform: scale(1.1);
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
 
 /* Changes for screensize 992px or smaller */
 
 @media screen and (max-width: 992px) {
-    nav {
-        float: right;
-    }
-    header, nav {
-        display: flex;   
-        flex-direction: column;
-        text-align: center;
-       }
+	nav {
+		float: right;
+	}
 
-/* Change the header color */
+	header,
+	nav {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
 
-    header {
-      background:  #562E52;
-    }
-    #container{
-        height: 1400px;
-        padding: 0px auto;
-        align-items: center;
-    }
-    #projects{
-        padding: 30px auto;
-    }
-  }
-  
+	/* Change the header color */
+
+	header {
+		background: #562E52;
+	}
+
+	#container {
+		height: 1400px;
+		padding: 0px auto;
+		align-items: center;
+	}
+
+	#projects {
+		padding: 30px auto;
+	}
+}
+
 /* Changes for screen size 600px or smaller */
 
-  @media screen and (max-width: 600px) {
-    h1 {
-    text-align: center;    
-    }  
-    header, nav {
-     display: flex;   
-     flex-direction: column;
-     text-align: center;
-    }
-
- /* Change the header color */
- 
-    header {
-      background: #5381af;
-    }
-    #me {
-        align-items: center;
-        
-    }
-    #container {
-        display:flex;
-        flex-direction: column;
-        height:2600px;
-        flex-wrap: nowrap;
-        justify-content: center; 
-         
-    }
-  
-    #projects{
-        padding: 30px auto;
-    }  
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 600px) {
+	h1 {
+		text-align: center;
+	}
+
+	header,
+	nav {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	/* Change the header color */
+
+	header {
+		background: #5381af;
+	}
+
+	#me {
+		align-items: center;
+
+	}
+
+	#container {
+		display: flex;
+		flex-direction: column;
+		height: 2600px;
+		flex-wrap: nowrap;
+		justify-content: center;
+
+	}
+
+	#projects {
+		padding: 30px auto;
+	}
+
+}
